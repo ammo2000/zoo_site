@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AM Zoo Site</title>
+	{% load static %}
+	<style>
+	body{
+	background:	 #79ff4d;
+}
+</style>
+</head>
+<style>
+.fnt{
+	font-size: 30px;
+	text-decoration:none;
+	color:black;
+}
+.first{
+	border-radius: 40px;
+}
+.fir{
+	border-radius:500px;
+	height:140px;
+	width:40%;
+}
+h1{
+	text-align: center;
+}
+.frr{
+	width:25%;
+	height:15%;
+	border-radius: 50px;
+	margin-top: -130px;
+}
+.fri{
+	width:340px;
+	height:200px;
+	border-radius: 50px;
+	margin-top: -300px;
+}
+</style>
+<body>
+
+<div style="text-align:center">
+	<img class="fir" src="{% static 'zooo.jpg' %}" alt="" >
+</div>
+<div style="text-align:right">
+	<img class="frr" src="{% static 'beer.gif' %}" alt="" >
+</div>
+<div style="text-align:left">
+	<img class="fri" src="{% static 'jump.gif' %}" alt="" >
+</div>
+
+
+
+
+<h1>This is a great and safe zoo . Feel free to look around</h1>
+<img class="first" src="{% static 'zoo_welcome.jpg' %}" alt="" width="100%">
+<br><br>
+<div style="text-align:center">
+<a class="fnt"href="{% url 'animals'%}"><b>Click here to show zoo Animals<b></a>
+</div>
+</body>
+
+</html>

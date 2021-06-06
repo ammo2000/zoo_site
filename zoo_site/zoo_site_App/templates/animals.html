@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Zoo Animals</title>
+  {% load static %}
+</head>
+<style>
+
+img{
+	height:90%;
+	width:90%;
+	border-radius: 100px;
+}
+
+p{
+	font-size: 24px;
+}
+
+*{
+	background-color: 	 #b3e6ff;
+}
+
+.fnt{
+		font-size: 30px;
+
+		text-decoration:none;
+		color:black;
+	}
+
+h1,h2,h3,h4,h5,h6{
+	font-size:25px;
+}
+
+.ani{
+	width:100%;
+	height:150px;
+	border-radius: 60px;
+	cursor:not-allowed;
+}
+
+p{
+	font-size: 40px;
+}
+
+.tiger{
+	border-radius: 100px;
+	height:45px;
+	width:45px;
+}
+</style>
+
+<body>
+
+	<img class="ani"src="{% static 'animals.jpg'%}" alt="">
+	<p style="text-align:center"><b>Have a look at our anger friends</b></p>
+
+	<h2><strong><img class="tiger"src ="{% static 'tigerr.jpg' %}"></img>  Tiger:The King Of Forest </strong></h2>
+		<div style="text-align:center"><a href ="https://en.wikipedia.org/wiki/Tiger">
+		<img src="{% static 'tiger.jpg' %}" alt="tiger" height="400">
+	</a>
+ </div>
+
+
+	<h3><strong><img class="tiger"src ="{% static 'dogg.jpg' %}"></img>Dogs:The Cutest Pet</strong></h3>
+	<div style="text-align:center">
+		<a href="https://en.wikipedia.org/wiki/Dog">
+		<img src="{% static 'dog.jpg' %}" alt="" height="400">
+	</a>
+ </div>
+
+
+	<h4><strong><img class="tiger"src ="{% static 'pandaa.jpg' %}"></img>Panda:The Coolest Animal </strong></h4>
+	<div style="text-align:center">
+		<a href="https://en.wikipedia.org/wiki/Panda">
+		<img src="{% static 'panda.jpg'%}" alt="" height="400">
+	</a>
+ </div>
+
+
+	<h5><strong><b><img class="tiger"src ="{% static 'ele.jpg' %}"></img>Elephant:The Strongest Animal</b></strong></h5>
+	<div style="text-align:center">
+		<a href="https://en.wikipedia.org/wiki/Elephant">
+		<img src="{% static 'elephant.jpg' %}" alt=""height="500">
+	</a>
+  </div>
+
+
+	<h6><img class="tiger"src ="{% static 'beara.jpg' %}"></img>Bear:The Lazy Animal</h6>
+	<div style="text-align:center">
+		<a href="https://en.wikipedia.org/wiki/Bear">
+		<img src="{% static 'bear.jpg' %}" alt="" height="500">
+	</a>
+   </div>
+
+
+	 <h6><img class="tiger"src ="{% static 'zebraa.jpg' %}"></img>Zebra:The Black & White Animal</h6>
+	 <div style="text-align:center">
+		 <a href="https://en.wikipedia.org/wiki/Zebra">
+		 <img src="{% static 'zebra.jpg' %}" alt="" height="500">
+	 </a>
+		 </div>  <br><br>
+
+
+	<div style="text-align:center">
+  <b><a class="fnt" href="{% url 'tickets'%}">Click here to show tickets</a></b>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tickets</title>
+	{% load static %}
+
+	<style>
+		ul{
+			font-size: 19px;
+		}
+		table{
+			font-size: 20px;
+		}
+		*{
+			background-color:  #ccffff;
+
+		}
+	</style>
+</head>
+<style>
+a{
+	font-size: 20px;
+	text-decoration: none;
+}
+h1{
+	font-size: 30px;
+	text-align: center;
+}
+img{
+	border-radius: 90px;
+}
+
+</style>
+<body>
+
+	<h1>Tickets - Prices and T&Cs</h1>
+	<h3>Tickets - Types and Prices</h3>
+	<table>
+		<tr>
+			<th>Type</th>
+			<th>Price</th>
+			<th>Notes</th>
+		</tr>
+		<tr>
+			<td>Adult</td>
+			<td> Rupee 150/-</td><br><br>
+			<td>Ages 18+</td>
+		</tr>
+		<tr>
+			<td>Student</td>
+			<td> Rupee 100/-  </td>
+			<td>Valid with a Student card</td>
+		</tr>
+		<tr>
+			<td>Child</td>
+			<td> Rupee 50/-  </td>
+			<td>Ages<18</td>
+		</tr>
+	</table>
+	<h4><i>Terms and Conditions</i></h4>
+	<ul>
+		<li>No Entry after 11pm</li>
+		<li>No wrestling with the snakes</li>
+		<li>No refunds if caughts wrestling</li>
+	</ul>
+	<textarea rows="8" cols="80">Enter your Feedback here...</textarea><br>
+
+
+
+  <br><br>
+
+  <a href="{% url 'thankyou'%}">Submit</a>
+	<marquee scrollamount="15"><img src="{% static 'train.gif' %}" alt=""></marquee>
+</body>
+</html>
